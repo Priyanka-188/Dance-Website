@@ -1,0 +1,66 @@
+//- index.pug
+doctype html
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+html
+  head
+    title Piya Dance Academy
+    style
+      include ../static/style.css
+
+  body
+    nav#navbar 
+            div#logo 
+                img(src="/static/img/logo.png", alt="")
+                |PDA
+            div
+                ul
+                    li #[a(href="/") Home] 
+                    li #[a(href="/") About]
+                    li #[a(href="/") Services]
+                    li #[a(href="/") Class Info]
+                    li #[a(href="/") Contact Us]
+    
+    section#intoSection 
+        div Welcome to Piya's Dance Academy 
+        div.small Eat Dance Sleep Repeat
+    section#missionSection 
+        h2 Our Mission
+        div.container 
+            div.box 
+                h5 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/m1.jpg")
+                    .card-content 
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                
+            div.box 
+                h5 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/m2.jpg")
+                    .card-content 
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            div.box 
+                h5  Dance the way you like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/m3.jpg")
+                    .card-content 
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+           
+            
+
+    section#sponserSection
+        h2 Our Sponsers 
+        div#sponsers 
+            img(src="/static/img/logo1.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo2.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo3.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo4.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo5.png", alt="Sponser img" Class="spImage ")
+    footer#footer 
+        | Copyright @ 2023 PiyaDanceAcademy.com | All rights reserved
+
+    script
+      include ../static/index.js

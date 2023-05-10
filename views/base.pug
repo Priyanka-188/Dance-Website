@@ -1,0 +1,23 @@
+doctype html
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+html
+  head
+    title Piya's Dance Academy
+    block scripts
+    block style 
+       
+  body
+    nav#navbar 
+            div#logo 
+                img(src="/static/img/logo.png", alt="")
+                |PDA
+            div
+                ul
+                    li #[a(href="/") Home] 
+                    li #[a(href="/about") About]
+                    li #[a(href="/services") Programs]
+                    li #[a(href="/contact") Contact Us]
+    
+    block content
+    footer#footer 
+        | Copyright @ 2023 PiyaDanceAcademy.com | All rights reserved

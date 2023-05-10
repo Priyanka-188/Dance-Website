@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content
+    
+    section#intoSection 
+        div Welcome to Piya's Dance Academy 
+        div.small Eat Dance Sleep Repeat
+    section#missionSection 
+        h2 Our Mission
+        div.container 
+            div.box 
+                h5 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/m1.jpg")
+                    .card-content 
+                        p Lorem ipsum dolor sit, ametamet consectetur adipisicing consectetur adipisicingamet consectetur adipisicing elit. 
+            div.box 
+                h5 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/m2.jpg")
+                    .card-content 
+                        p Lorem ipsum dolor sit, amet conseamet consectetuamet consectetur adipisicingr adipisicingctetur adipisicing elit. 
+            div.box 
+                h5  Dance the way you like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/m3.jpg")
+                    .card-content 
+                        p Lorem ipsum dolor sit, amet amet consectetur adipisicingconsectetur adipisicingamet consectetur adipisicing elit. 
+           
+    section#sponserSection
+        h2 Our Sponsers 
+        div#sponsers 
+            img(src="/static/img/logo1.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo2.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo3.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo4.png", alt="Sponser img" Class="spImage ")
+            img(src="/static/img/logo5.png", alt="Sponser img" Class="spImage ")
