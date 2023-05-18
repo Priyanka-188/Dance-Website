@@ -29,7 +29,7 @@ h1{
 }
 
 button {
-    padding: 7px 12px;
+    padding: 8px 14px;
     border: 1px solid black;
     border-radius: 7px;
     background-color: #750909;
@@ -37,4 +37,19 @@ button {
     margin-top: 10px;
     font-size: 15px;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Media queries */
+@media screen and (max-width:800px){
+.myinput {
+    width: 100%;
+    margin: 10px 0px;
+}
+}
+
+@media screen and (max-width:422px){
+    .myinput {
+        width: 130%;
+        margin: 10px -20px;
+    }
 }

@@ -6,6 +6,7 @@
 }
 body{
     background-color: aliceblue;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 #navbar ul{
     display: flex;
@@ -64,7 +65,7 @@ body{
     background: center/cover no-repeat url("/static/img/bg.jpg") ;
 }
 
-#intoSection div.small{
+#intoSection .small{
     font-size: 25px;
     padding: 5px;
 }
@@ -81,8 +82,8 @@ body{
 
 #missionSection .container .box{
     border: 1px solid black;
-    width: 169px;
-    height: 210px;
+    width: 205px;
+    height: auto;
     margin: 5px 30px;
     box-shadow: 5px 5px rgb(229, 196, 196);
     /* background-color: rgb(239, 230, 230); */
@@ -141,6 +142,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -25px;
 }
 #sponsers .spImage{
     margin: 0 50px;
@@ -190,7 +192,9 @@ body{
 #aboutContainer .aboutbox h2{
     margin-bottom: 15px;
 }
-
+#aboutContainer .aboutbox p{
+    text-align: justify;
+}
 
 /* Programs or Services page CSS */
 #serviceSection {
@@ -213,14 +217,16 @@ body{
 #serviceSection .servicebox .content{
     display: flex;
     flex-direction: column;
+    text-align: justify;
 }
 #serviceSection .servicebox{
     margin: 25px 25px 25px 0;
-    width: 70vw;
+    width: 85vw;
 }
 #serviceSection .servicebox .content h4{
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 1.170em;
 }
 #serviceSection h1{
     font-size: 2rem;
@@ -230,14 +236,25 @@ body{
 
 
 /* MediaQuery */
-@media screen and (max-width:768px){
-    
+@media screen and (max-width:800px){
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 40px;
+    }
 
     #intoSection {
         font-size: 2.5rem;
-        height: 60vh;
+        height: 50vh;
+
     }
-    #intoSection div.small {
+    #intoSection .small {
         font-size: 1.9rem;
     }
     #missionSection {
@@ -246,20 +263,70 @@ body{
     }
     #missionSection .container .box {
         width: 192px;
-        height: 214px;
+        height: auto;
         margin: 10px 20px 30px 33px;
     }
     #sponserSection {
         height: auto;
     }
+
+    /* other sections  */
+    #aboutContainer {
+        width: 100vw;
+        height: 60vh;
+        margin-bottom: 28vh;
+    }
+    .myinput {
+    width: 130%;
+    margin: 10px -20px;
+   }
+
+   #aboutContainer .aboutbox p{
+    text-align: justify;
+    width: 90%;
+   }
+   
+   #serviceSection .servicebox .content {
+   text-align: justify;
+}
+#serviceSection .servicebox .content h4 {
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+.servicebox  img {
+    margin-top: 46px;
+    height: 200px;
+    width: 220px;
+    margin-right: 25px;
+    border-radius: 5px;
 }
 
+
+
+
+    #serviceSection .servicebox {
+        margin: 25px 25px 25px 28px;
+        width: 85vw;
+    }
+    .myinput {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    
+}
+
+
+
+/* mediaquery for phones */
 @media screen and (max-width:422px){
     #intoSection {
         font-size: 2rem;
         height: 75vh;
         text-align: center;
         padding-bottom: 135px;
+    }
+    #intoSection .small {
+        font-size: 1.3rem;
     }
     #sponsers{
         width: 100vw;
@@ -268,8 +335,8 @@ body{
         height: auto;
     }
     #sponsers .spImage{
-        margin: 0 21px 20px 12px ;
-        height: 25px;
+        margin: 30px 25px 30px 15px;
+        height: 30px;
         width: auto;
     }
     #missionSection .container .box {
@@ -288,7 +355,66 @@ body{
         padding-left: 0 -5px 0 15px ;
         font-size: 13px;
     }
- footer{
+
+/* About section */
+#aboutContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50vh;
+}
+#aboutContainer .aboutbox {
+    width: 100%;
+    
+}
+#aboutContainer .aboutbox h2 {
     text-align: center;
+    margin-top: -48px;
+}
+#aboutContainer .aboutbox p{
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 100px;
+    margin-left: 18px;
+}
+#aboutContainer .aboutbox img {
+    height: 300px;
+    width: auto;
+    margin: 20px 20px 10px 20px;
+}
+
+/* Programs or services page */
+#serviceSection .servicebox {
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+}
+.servicebox  img {
+    height: auto;
+    width: 90vw;
+}
+#serviceSection h1 {
+    font-size: 1.8rem;
+    margin-bottom: 3px;
+    text-align: center;
+}
+#serviceSection .servicebox .content {
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+    text-align: justify;
+}
+#serviceSection .servicebox .content h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+
+
+ footer{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
  }
+
+ 
 }
